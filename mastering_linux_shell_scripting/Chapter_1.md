@@ -35,11 +35,11 @@ page 12
 
 ### Checking exit status
 >__command1 || command2__\
->command2 executed only if command1 exit code != 0
+>command2 executed only if command1 exit code != 0  
 > __command1 && command2__\
->command2 executed only if command1 exit code = 0
+>command2 executed only if command1 exit code = 0  
 > __echo $?__\
->checking exit code
+>checking exit code  
 
 ### Running the script with arguments
 >page 18. table
