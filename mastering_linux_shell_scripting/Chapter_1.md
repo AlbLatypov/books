@@ -18,14 +18,14 @@ The _type_ command will display the type of command for a given word entered at 
 >  - Keyword
 >  - File
 >
->__$ type -a ls__
-ls is aliased to 'ls --color=auto'
+> >__$ type -a ls__\
+ls is aliased to 'ls --color=auto'\
 ls is /bin/ls
 >
->__$ type -t ls__
+> >__$ type -t ls__\
 alias
 >
->__$type ls quote pwd do id__
+> >__$type ls quote pwd do id__\
 try it
 
 
@@ -34,11 +34,11 @@ try it
 page 12
 
 ### Checking exit status
->__command1 || command2__
+>__command1 || command2__\
 >command2 executed only if command1 exit code != 0
-> __command1 && command2__
+> __command1 && command2__\
 >command2 executed only if command1 exit code = 0
-> __echo $?__
+> __echo $?__\
 >checking exit code
 
 ### Running the script with arguments
@@ -64,8 +64,9 @@ variables as lower case to make it easy to differentiate your variables from env
 variables. This is not required, but is preferable.
 ### Variable scope
 >Once you have declared your variable, it will be available for use in your entire bash script without any problems.
-...variable's scope is only limited to the process that
-creates it...
+>>variable's scope is only limited to the process that
+creates it
+
 try __export__ to use vars in another scripts.
 
 >...Another script only makes a copy of the variable and
@@ -78,7 +79,7 @@ __Details in page 25__
 arrays, or floats, as we have seen, but this is not everything.
 
 >A command substitution means storing the output of a command execution in a variable.
-> - __cur_dir=$(pwd)__
+> - __cur_dir=$(pwd)__\
 > - __echo $cur_dir__
 
 ### Debugging your scripts
@@ -89,7 +90,7 @@ shebang, but it is often easier to run the script directly with bash:
 >The __-x__ option, which displays the commands as they are executed, is more commonly used.
 It's useful to know the decision branch that has been chosen by the script. The following
 shows this in action:
->- __bash -x | -v__ scriptname.sh
+>- __bash -x | -v__ scriptname.sh\
 
 >Another modern way of debugging shell scripts is by using __Visual Studio Code__.
 There is a plugin called bash debug that enables you to debug bash scripts visually, as is
