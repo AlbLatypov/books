@@ -29,10 +29,10 @@ default).
 >ansible multi -a "hostname" __-f 1__
 
 >__some examples__
-ansible app -s -a "service ntpd restart" --limit "192.168.60.4"
-ansible app -s -m group -a "name=admin state=present"
-ansible app -s -m user -a "name=johndoe group=admin createhome=yes"
-ansible app -s -m user -a "name=johndoe state=absent remove=yes"
+- ansible app -s -a "service ntpd restart" --limit "192.168.60.4"
+- ansible app -s -m group -a "name=admin state=present"
+- ansible app -s -m user -a "name=johndoe group=admin createhome=yes"
+- ansible app -s -m user -a "name=johndoe state=absent remove=yes"
 
 >__Get file info__
 ansible multi -m stat -a "path=/etc/environment"

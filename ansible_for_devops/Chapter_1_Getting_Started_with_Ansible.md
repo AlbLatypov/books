@@ -14,9 +14,9 @@ pip install ansible
 >__Debian/Ubuntu:__
 The easiest way to install Ansible on a Debian or Ubuntu system is to use the official apt package.
 >
->apt-add-repository -y ppa:ansible/ansible
->apt-get update
->apt-get install -y ansible
+> - apt-add-repository -y ppa:ansible/ansible
+> - apt-get update
+> - apt-get install -y ansible
 
 > __Inventory_path__
 /etc/ansible/hosts
@@ -30,6 +30,6 @@ Ansible commands, but this entire book is written assuming passwordless authenti
 so you’ll need to keep this in mind every time you run a command or playbook.
 
 >__first AD-HOCs__
-ansible example -a "free -m" -u [username]
-ansible example -m ping -u [username]
-ansible multi -a "date"
+> - ansible example -a "free -m" -u [username]
+> - ansible example -m ping -u [username]
+> - ansible multi -a "date"
