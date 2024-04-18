@@ -32,14 +32,14 @@ FNR полезен, когда вы обрабатываете нескольк�
 
 >file1.txt:
 >
->one
->two
+>one\
+>two\
 >three
 
 >file2.txt:
 >
->four
->five
+>four\
+>five\
 >six
 
 Затем выполните следующую команду awk:
@@ -48,9 +48,9 @@ FNR полезен, когда вы обрабатываете нескольк�
 
 Вывод будет следующим:
 
-FNR for file 1: one
-NR for file 1: one
-FNR for file 2: four
+FNR for file 1: one\
+NR for file 1: one\
+FNR for file 2: four\
 NR for file 2: four
 
 Как можно видеть, FNR для первой строки каждого файла равен 1, в то время как NR увеличивается для каждой строки во всех файлах.
@@ -60,32 +60,32 @@ NR for file 2: four
 
 >You can define the variable using any text, but it __MUST not start with numbers__
 
-$ awk '
-BEGIN{
-var1=2
-var2=3
-var3=var1+var2
-print var3
+awk '\
+BEGIN{\
+var1=2\
+var2=3\
+var3=var1+var2\
+print var3\
 }'
 
-$ awk '
-BEGIN{
-str1="Welcome "
-str2=" To shell scripting"
-str3=str1 str2
-print str3
+awk '\
+BEGIN{\
+str1="Welcome "\
+str2=" To shell scripting"\
+str3=str1 str2\
+print str3\
 }'
 
 ## Conditional statements
 
 #### if command
 
->Assume you have the following file:
-50
-30
-80
-70
-20
+>Assume you have the following file:\
+50\
+30\
+80\
+70\
+20\
 90
 Now, let's filter the values:
 
@@ -163,26 +163,26 @@ Doe
 
 Вывод будет таким:
 
-User    UID/GID
-root    0/0
-daemon  1/1
-bin     2/2
-sys     3/3
-sync    4/4
-games   5/6
-man     7/7
-lp      8/-2
-mail    9/-2
-news    10/11
-uucp    11/12
-operator        12/12
-backup  13/13
-list    14/14
-irc     15/15
-gopher  16/16
-ftp     17/18
-nfsu    18/19
-nobody  19/20
+User    UID/GID\
+root    0/0\
+daemon  1/1\
+bin     2/2\
+sys     3/3\
+sync    4/4\
+games   5/6\
+man     7/7\
+lp      8/-2\
+mail    9/-2\
+news    10/11\
+uucp    11/12\
+operator        12/12\
+backup  13/13\
+list    14/14\
+irc     15/15\
+gopher  16/16\
+ftp     17/18\
+nfsu    18/19\
+nobody  19/20\
 
 Если NR равен 1 (т.е. это первая строка), мы печатаем заголовок. Для всех остальных строк мы печатаем данные в нашем формате таблицы.
 
@@ -210,14 +210,14 @@ To see an example of an _awk_ control file, we should revisit the formatting of 
 Creating the following file will encapsulate the _awk_ statements:
 
 `function green(s) {`
-`    printf "\033[1;32m" s "\033[0m\n"`
+&ensp;&ensp;&ensp;`printf "\033[1;32m" s "\033[0m\n"`
 `}`
 `BEGIN {`
-`    FS=":"`
-`    green("    Name:    UID:         Shell:")`
+&ensp;&ensp;&ensp;`FS=":"`
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;`green("    Name:    UID:         Shell:")`
 `}`
 `{`
-`    printf "%10s %4d %17s\n", $1,$3,$7`
+`printf "%10s %4d %17s\n", $1,$3,$7`
 `}`
 
 save to file this code `passwd.awk`
@@ -233,11 +233,11 @@ In the previous example, we defined a function called _green_. This leads into t
 some built-in functions that come with _awk_.
 AWK comes with many built-in functions such as mathematical functions:
 
-- sin (x)
-- cos (x)
-- sqrt (x) 
-- exp (x)
-- log (x)
+- sin (x)\
+- cos (x)\
+- sqrt (x)\ 
+- exp (x)\
+- log (x)\
 - rand (x)
 
 You can use them like this:

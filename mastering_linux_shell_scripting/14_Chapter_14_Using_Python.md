@@ -39,26 +39,26 @@ next one
 
 Python и AWK можно использовать совместно, например, для преобразования и анализа данных в текстовых файлах. Вот пример, который демонстрирует, как использовать AWK из Python для фильтрации данных, а затем использовать Python для дальнейшего анализа:
 
-`import subprocess`
+`import subprocess`\
 
-`# Используем AWK для фильтрации данных из файла data.txt`
-`awk_command = "awk '{if ($3 > 10) print $0}' data.txt"`
-`awk_process = subprocess.Popen(awk_command, shell=True, stdout=subprocess.PIPE)`
+`# Используем AWK для фильтрации данных из файла data.txt`\
+`awk_command = "awk '{if ($3 > 10) print $0}' data.txt"`\
+`awk_process = subprocess.Popen(awk_command, shell=True, stdout=subprocess.PIPE)`\
 
-`# Читаем данные, отфильтрованные AWK, и сохраняем их в список`
-`data_list = []`
-`for line in awk_process.stdout:`
-    `line = line.decode('utf-8').strip()`
+`# Читаем данные, отфильтрованные AWK, и сохраняем их в список`\
+`data_list = []`\
+`for line in awk_process.stdout:`\
+    `line = line.decode('utf-8').strip()`\
     `data_list.append(line)`
 
-`# Закрываем процесс AWK`
-`awk_process.stdout.close()`
+`# Закрываем процесс AWK`\
+`awk_process.stdout.close()`\
 `awk_process.wait()`
 
-`# Анализируем данные с использованием Python`
-`total = 0`
-`for line in data_list:`
-    `fields = line.split()`
+`# Анализируем данные с использованием Python`\
+`total = 0`\
+`for line in data_list:`\
+    `fields = line.split()`\
     `total += int(fields[2])`
 
 `print("Total:", total)`
@@ -69,8 +69,8 @@ Python и AWK можно использовать совместно, напри
 
 `import subprocess`
 
-`# Используем AWK для фильтрации данных из файла data.txt`
-`awk_args = ['awk', '{if ($3 > 10) print $0}', 'data.txt']`
+`# Используем AWK для фильтрации данных из файла data.txt`\
+`awk_args = ['awk', '{if ($3 > 10) print $0}', 'data.txt']`\
 `awk_process = subprocess.Popen(awk_args, stdout=subprocess.PIPE)`
 
 
