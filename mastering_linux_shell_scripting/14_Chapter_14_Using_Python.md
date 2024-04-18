@@ -15,22 +15,22 @@ The __argv__ array is a part of the __sys__ object
 - The argument count will always be at least 1, so, keep this in mind when
 checking for supplied arguments
 
->`#!/usr/bin/python3`
->`import sys`
+>`#!/usr/bin/python3`\
+>`import sys`\
 >`print("text"+sys.argv[1])`
 
 next one
 
->`#!/usr/bin/python3`
->`import sys`
->`count = len(sys.argv)`
->`name=''`
->`if ( count == 1):`
->`   name = input ("Enter a name: ")`
->`else:`
+>`#!/usr/bin/python3`\
+>`import sys`\
+>`count = len(sys.argv)`\
+>`name=''`\
+>`if ( count == 1):`\
+>`   name = input ("Enter a name: ")`\
+>`else:`\
 >`   name = sys.argv[1]`
 >
->`print ("hello " + name)`
+>`print ("hello " + name)`\
 >`print ("Exiting " + sys.argv[0])`
 
 >Остальной текст по работе с файлами python
