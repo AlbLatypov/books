@@ -20,6 +20,7 @@ __Идемпотентность__ - свойство объекта или оп
 
 ### Ansible.cfg
 
+[Оригинальный файл ansible](https://github.com/ansible/ansible/blob/stable-2.9/examples/ansible.cfg)
 1. Файл, указанный в переменной окружения ANSIBLE_CONFIG.
 2. ./ansible.cfg (ansible.cfg в текущем каталоге).
 3. -/ansible.cfg (ansible.cfg в вашем домашнем каталоге).
