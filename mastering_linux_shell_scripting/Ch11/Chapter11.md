@@ -1,4 +1,4 @@
-# Regular Expressions
+# Chapter 11. Regular Expressions
 
 In this chapter, we will talk about the most mysterious part of using _stream editor_ (sed) and
 AWK. They are regular expressions, or regexes for short. In the previous chapters, we

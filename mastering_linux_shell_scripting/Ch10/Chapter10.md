@@ -1,4 +1,4 @@
-# AWK Fundamentals
+# Chapter 10. AWK Fundamentals
 
 ## Displaying and filtering content from files
 `see script ch10_awk_1.sh`

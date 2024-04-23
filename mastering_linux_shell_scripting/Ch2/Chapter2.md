@@ -1,4 +1,4 @@
-# Creating Interactive Scripts
+# Chapter 2. Creating Interactive Scripts
 
 ## Topics:
 
