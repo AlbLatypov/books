@@ -20,3 +20,4 @@
 #### Полезные ссылки:
 
 - [Сайт | Искусство программирования на языке сценариев командной оболочки](http://web.opennet.ru/docs/RUS/bash_scripting_guide/)
+- [Скрипты ](/mastering_linux_shell_scripting/Scripts/scrpt.readme.md)
