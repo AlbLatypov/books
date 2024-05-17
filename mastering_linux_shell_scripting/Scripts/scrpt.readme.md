@@ -107,7 +107,7 @@ curl -fsSL https://get.docker.com -o get-docker.sh && sudo sh get-docker.sh
 ```bash
 #! /bin/bash
 sudo usermod -aG docker $(whoami)
-sudo systemctl start docker && sudo systemctl enable docke
+sudo systemctl start docker && sudo systemctl enable docker
 ```
 
 ### Docker uninstall
@@ -142,3 +142,14 @@ done
 [show script](beholder.sh)
 
 >TODO: структурировать
+
+### VIM. Выделить текст и поставить решетку перед каждой линией
+
+Чтобы выделить текст и поставить решетку (#) на всех линиях в Vim, следуйте этим шагам:
+
+    Перейдите в режим визуального выделения, нажав клавишу "V" в нормальном режиме.
+    Выделите текст, который вы хотите закомментировать, перемещая курсор.
+    Нажмите ":" для входа в режим командной строки внизу экрана.
+    Введите команду "norm I#" (без кавычек) и нажмите Enter.
+
+Эта команда добавит решетку в начало каждой выделенной строки.
